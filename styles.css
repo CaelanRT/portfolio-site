@@ -1,0 +1,28 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+    /* Swipe underline effect for nav links */
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0%;
+    background-color: #7c3aed; /* Tailwind's violet-700 */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}

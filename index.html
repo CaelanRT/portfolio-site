@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caelan Roberge-Toll</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        nav {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-    </style>
-
 </head>
-<body>
-    <nav class="flex justify-between items-center border-b-1 p-4">
-        <a href="./index.html" class="text-xl font-semibold"><h2>Caelan Roberge-Toll</h2></a>
+<body class="bg-white text-gray-900">
 
-        <div class="flex gap-5">
-            <a href="./projects.html">Projects</a>
-            <a href="./resume.html">Resume</a>
-            <a href="./contact.html">Contact</a>
+<nav class="flex justify-between items-center border-b p-4">
+    <!-- Your name (no hover effect) -->
+    <a href="./index.html" class="text-xl font-semibold">
+        <h2>Caelan Roberge-Toll</h2>
+    </a>
+
+    <!-- Nav links with swipe effect -->
+    <div class="flex gap-5 text-base">
+        <a href="./projects.html" class="nav-link">Projects</a>
+        <a href="./resume.html" class="nav-link">Resume</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+    </div>
+</nav>
+
+<main class="mt-14">
+    <div class="flex flex-col items-center">
+        <h1 class="text-4xl font-bold">Hi, I'm Caelan!</h1>
+
+        <!-- Purple button group -->
+        <div class="flex gap-10 mt-10">
+            <a href="./projects.html" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200">Developer</a>
+            <p>|</p>
+            <a href="https://www.thecommotionsband.com/home" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200">Musician</a>
+            <p>|</p>
+            <a href="https://caelanrobergetoll.substack.com/" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200">Writer</a>
         </div>
-    </nav>
 
-    <main class="p-4 mt-4">
-        <div class="flex flex-col items-center">
-            <h1 class="text-4xl font-bold">Hi, I'm Caelan!</h1>
-            <div class="flex mt-8">
-                <a href="./projects.html" class="mr-4 hover:bg-fuschsia-500">Developer</a>
-                <p>|</p>
-                <a href="https://www.thecommotionsband.com/" class="mr-4 ml-4">Musician</a>
-                <p>|</p>
-                <a href="https://caelanrobergetoll.substack.com/" class="ml-4">Writer</a>
-            </div>
-
-        </div>
+        <!-- Divider -->
+        <div class="w-full sm:w-1/2 h-px bg-black my-14 mx-auto"></div>
+    </div>
 
 
-    </main>
-
+</main>
 
 </body>
 </html>
