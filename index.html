@@ -16,7 +16,7 @@
 </head>
 <body class="bg-white text-gray-900">
 
-<nav class="flex justify-between items-center border-b p-4">
+<nav class="flex justify-between items-center border-b p-4 shadow-md">
     <a href="./index.html" class="text-xl font-semibold">
         <h2>Caelan Roberge-Toll</h2>
     </a>
@@ -24,33 +24,72 @@
     <!-- Nav links with swipe effect -->
     <div class="flex gap-5 text-base">
         <a href="./projects.html" class="nav-link">Projects</a>
-        <a href="./resume.html" class="nav-link">Resume</a>
+        <a href="./aboutme.html" class="nav-link">About</a>
         <a href="./contact.html" class="nav-link">Contact</a>
     </div>
 </nav>
 
-<main class="mt-14">
+<main class="mt-20">
     <div class="flex flex-col items-center">
         <h1 class="text-4xl font-bold">Hi, I'm Caelan!</h1>
 
         <!-- Purple button group -->
         <div class="flex items-center gap-6 mt-10">
-            <a href="./projects.html" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200">
+            <a href="./projects.html" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200 shadow-sm hover:-translate-y-0.5 hover:shadow-md">
                 Developer
             </a>
             <span class="text-gray-400 text-xl">|</span>
-            <a href="https://www.thecommotionsband.com/home" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200">
+            <a href="https://www.thecommotionsband.com/home" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200 shadow-sm hover:-translate-y-0.5 hover:shadow-md">
                 Musician
             </a>
             <span class="text-gray-400 text-xl">|</span>
-            <a href="https://caelanrobergetoll.substack.com/" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200">
+            <a href="https://caelanrobergetoll.substack.com/" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200 shadow-sm hover:-translate-y-0.5 hover:shadow-md">
                 Writer
             </a>
         </div>
 
 
-        <!-- Divider -->
-        <div class="w-full sm:w-1/2 h-px bg-black my-14 mx-auto"></div>
+        <!-- Card area -->
+<section class="mx-auto max-w-6xl px-6 mt-20">
+  <div class="grid grid-cols-3 gap-8">
+    <!-- Card 1 -->
+    <a href="./projects.html"
+       class="group flex h-[320px] flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-[16/9] bg-gray-100 flex items-center justify-center overflow-hidden rounded-t-xl">
+            <img src="./assets/bandos.png" class="max-h-full max-w-full object-contain" />
+        </div>
+
+      <div class="p-5 text-center">
+        <h3 class="truncate text-xl font-semibold">BandOS</h3>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="./projects.html"
+       class="group flex h-[320px] flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-[16/9] bg-gray-100 flex items-center justify-center overflow-hidden rounded-t-xl">
+            <img src="./assets/weather_station_combined.jpg" class="max-h-full max-w-full object-contain" />
+        </div>
+
+      <div class="p-5 text-center">
+        <h3 class="truncate text-xl font-semibold">Distributed Weather Station</h3>
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="./projects.html"
+       class="group flex h-[320px] flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-[16/9] bg-gray-100 flex items-center justify-center overflow-hidden rounded-t-xl">
+            <img src="./assets/grocerybud.png" class="max-h-full max-w-full object-contain" />
+        </div>
+
+      <div class="p-5 text-center">
+        <h3 class="truncate text-xl font-semibold">Grocery Bud</h3>
+      </div>
+    </a>
+  </div>
+</section>
+
     </div>
 
 
