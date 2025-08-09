@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BandOS</title>
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../assets/c-solid.svg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white text-gray-900">
+<nav class="flex justify-between items-center border-b p-4 shadow-md">
+    <a href="../index.html" class="text-xl font-semibold transform hover:-translate-y-0.5 transition duration-200">
+        <h2>Caelan Roberge-Toll</h2>
+    </a>
+
+    <!-- Nav links with swipe effect -->
+    <div class="flex gap-5 text-base">
+        <a href="../projects.html" class="nav-link">Projects</a>
+        <a href="../aboutme.html" class="nav-link">About</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+    </div>
+</nav>
+
+<main class="mt-20">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold">BandOS</h1>
+    </div>
+
+    <section class="mx-auto max-w-6xl px-6 mt-20">
+        <div class="flex flex-col items-center">
+            <img src="../assets/bandos.png" class="rounded shadow-md">
+
+            <div class="mt-10">
+                <h3 class="text-xl font-bold">Description:</h3>
+                <p class="mt-2">BandOS is a band management application I built to help bands and band leaders organize their gigs and rehearsals. 
+                    Current band communication is broken. Band leaders send out communication on a variety of different apps (Email, Whatsapp, Messenger), store sheet music on Dropbox, and there is no way to centralize a calendar for everyone to know exactly what's going on at all times.
+                    I've lived this painpoint first hand on numerous occasions, when a band leader forgot to update me on the change of date for a gig, or music got changed last minute and the message was sent on an app I didn't check.
+                    I wanted to build BandOS to help centralize communication for bands so that everyone knows they have a central source of truth for all gig and reheasal information, BandOS.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-32 items-center">
+                <div class="mt-10 mb-20 space-y-2">
+                <h3 class="text-xl font-bold">Technologies:</h3>
+                <p>- HTML/CSS</p>
+                <p>- Javascript/React</p>
+                <p>- Firebase/Firestore</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <a href="https://github.com/CaelanRT/band-management-app" class="bg-transparent hover:bg-violet-700 text-black hover:text-white px-4 py-2 rounded transition duration-200 shadow-sm hover:-translate-y-0.5 hover:shadow-md">Github</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </section>
+    
+    
+
+</main>
+
+
+</body>
+</html>
