@@ -26,3 +26,36 @@ nav {
 .nav-link:hover::after {
     width: 100%;
 }
+.hamburger-line {
+    display: block;
+    width: 1.25rem;
+    height: 2px;
+    margin: 2px 0;
+    border-radius: 999px;
+    background-color: #1f2937;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-toggle.is-open .hamburger-line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.is-open .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.is-open .hamburger-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.mobile-nav-link {
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+    background-color: #7c3aed;
+    color: #ffffff;
+}
